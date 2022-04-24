@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm: Secure & Fast UPI payments</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+      .navbar {
+        height: 85px;
+        width: 100%;
+        display: flex;
+      }
+
+      .left {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .middle {
+        width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .right {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sub-links {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00baf2;
+        padding: 2px 2px 2px 20px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .avatar {
+        margin-left: 10px;
+      }
+
+      .kyc {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6;
+        font-size: 18px;
+      }
+
+      .wallet {
+        margin-right: 5px;
+      }
+
+      .section-2 {
+        width: 100%;
+        height: 700px;
+        display: flex;
+      }
+
+      .left-section {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .right-section {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 100px;
+      }
+      .logo {
+        height: 80px;
+        width: 80px;
+      }
+      .head {
+        font-size: 55px;
+        font-weight: bold;
+      }
+      .para {
+        font-size: 20px;
+        font-weight: 500;
+        width: 450px;
+        line-height: 30px;
+      }
+
+      .btn {
+        background-color: black;
+        color: white;
+        padding: 15px 24px 15px 24px;
+        border-radius: 40px;
+        border: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      svg {
+        margin-left: 10px;
+      }
+
+      .right-logo {
+        height: 528px;
+        width: 528px;
+      }
+
+      .recharge-section {
+        width: 100%;
+        background-color: #00baf2;
+        color: white;
+      }
+      .inner-section {
+        width: 70%;
+        margin: auto;
+      }
+      .heading {
+        font-size: 36px;
+        padding-top: 70px;
+      }
+
+      .rc-child {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+      }
+
+      .rc-logo{
+        width: 64px;
+        height:64px
+      }
+
+      .inner-div{
+        line-height:10px;        
+        font-weight: bold;
+      }
+      .arrow{
+          margin-left: 3px;
+      }
+      .hbox,.hbox2{
+        /* border: 2px solid red; */
+        width: 35%;
+        padding: 20px;  
+        margin: 2px; 
+      }
+      .hbox:hover{
+          background-color: #0891bb;
+          border-radius: 15px;
+          cursor: pointer;
+      }
+      .book-section{
+          margin-top: -25px;
+          background-color: rgb(15,74,138);
+          width: 100%;
+          color: white;
+          height: 350px;
+          padding-bottom:25px ;
+      }
+      .hbox2:hover{
+          background-color: rgb(4, 58, 116);
+          border-radius: 15px;
+          cursor: pointer;
+      }
+      .txt{
+          font-weight: bold;
+          font-size: 48px;
+          margin-left: 15px;
+          margin-bottom: 0px;
+
+      }
+      .bigBox{
+        background-color: rgb(245,247,250);
+        padding-left: 10%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+
+
+
+      }
+      .boxP{
+          background-color: white;
+          display: flex;
+          padding-top: 30px;
+          justify-content: space-around;
+         width: 1000px;
+         height: 500px;
+         border-radius: 25px;
+      
+
+         border: 2px solid green;
+         margin-top: 15px;
+         margin-bottom: 10px;
+      }
+      .boxR {
+          height: 460px;
+          width: 500px;
+          border: 2px solid red;
+          width: 45%;
+      }
+      .boxL{
+          border: 2px solid blue;
+          width: 40%;
+        }
+      .smallBox{
+          height: 91.98px;
+          width: 76.99px;
+          display: flex;
+      }
+      .name{
+          margin-top:30px;
+          margin-left: 10px;
+      }
+      .sP{
+          font-size: 36px;
+          font-weight: bold;
+      }
+      .load{
+          font-weight: bold;
+      }
+      .learn{
+          background-color: rgb(0,41,112);
+          margin-left: 10px;
+      }
+      /* 561x700 */
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <img
+          src="https://assetscdn1.paytm.com/frontendcommonweb/11272962.svg"
+        />
+      </div>
+      <div class="middle">
+        <p class="sub-links">Paytm for Consumers</p>
+        <p class="sub-links">Paytm for Business</p>
+        <p class="sub-links">Company</p>
+        <p class="sub-links">Investor Relations</p>
+        <p class="sub-links">Career</p>
+      </div>
+      <div class="right">
+        <div class="account">
+          Sign in
+          <img
+            class="avatar"
+            src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <p class="kyc">
+      <b class="wallet">No Wallet KYC Required</b> 😊 to pay using UPI on Paytm.
+      Learn more.
+    </p>
+
+    <div class="section-2">
+      <div class="left-section">
+        <div>
+          <img
+            class="logo"
+            src="https://assetscdn1.paytm.com/images/catalog/view/310944/1626342046207.png"
+          />
+          <h1 class="head">
+            India's Most-loved <br />
+            Payments App
+          </h1>
+          <p class="para">
+            Recharge & pay bills, book flights & movie tickets, open a savings
+            account, invest in stocks & mutual funds, and do a lot more.
+          </p>
+          <button class="btn">
+            Download Paytm App
+            <span
+              ><svg
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                  fill="white"></path></svg></span>
+            <span
+              ><svg
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                  fill="white"
+                ></path></svg></span>
+          </button>
+        </div>
+      </div>
+      <div class="right-section">
+        <img
+          class="right-logo"
+          src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1626096258626.png"
+        />
+      </div>
+    </div>
+
+    <div class="recharge-section">
+      <div class="inner-section">
+        <h1 class="heading">Recharge &amp; Pay Bills on Paytm.</h1>
+        <div class="rc-child">
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png"/>
+            <div class="inner-div">
+              <p>Recharge</p>
+              <p>Prepaid</p>
+              <p>Mobile <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png"/>
+            <div class="inner-div">
+              <p>Pay</p>
+              <p>Rent</p>
+              <p>Payment <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png"/>
+            <div class="inner-div">
+              <p>Pay</p>
+              <p>Electricity</p>
+              <p>Bill <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png"/>
+            <div class="inner-div">
+              <p>Recharge</p>
+              <p>DTH</p>
+              <p>Connection<span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png"/>
+            <div class="inner-div">
+              <p>Book</p>
+              <p>Gas</p>
+              <p>Cylinder<span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png"/>
+            <div class="inner-div">
+              <p>Pay</p>
+              <p>Credit Card</p>
+              <p>Bill <span class="arrow"><i class="fa-solid fa-greater-than"></i></span> </p>
+            </div>
+          </div>
+          <div class="hbox">
+            <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png"/>
+            <div class="inner-div">
+              <p>All</p>
+              <p>Payment</p>
+              <p>Services <span class="arrow"><i class="fa-solid fa-greater-than"></i></span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="book-section ">
+        <div class="inner-section">
+          <h1 class="heading">Book &amp; Buy on Paytm.</h1>
+          <div class="rc-child">
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png"/>
+              <div class="inner-div">
+                
+                <p>Movie</p>
+                <p>Tickets <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png"/>
+              <div class="inner-div">
+                
+                <p>Flight</p>
+                <p>Tickets <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png"/>
+              <div class="inner-div">
+                
+                <p>Bus</p>
+                <p>Tickets <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png"/>
+              <div class="inner-div">
+                
+                <p>Train</p>
+                <p>Tickets <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png"/>
+              <div class="inner-div">
+                
+                <p>Car &</p>
+                <p>Bikes <span class="arrow"><i class="fa-solid fa-greater-than"></i></span></p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png"/>
+              <div class="inner-div">
+                
+                <p>International </p>
+                <p>Flights <span class="arrow"><i class="fa-solid fa-greater-than"></i></span> </p>
+              </div>
+            </div>
+            <div class="hbox2">
+              <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png"/>
+              <div class="inner-div">
+               
+                <p>Invest</p>
+                <p>in Stocks <span class="arrow"><i class="fa-solid fa-greater-than"></i></span> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="bigBox">
+    <p class="txt">Paytm Payment Instruments</p>
+    <!-- box 1 -->
+    <div class="boxP">
+        <div class="boxL">
+            <div class="smallBox">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt=""> <span class="name"><b>Paytm <br> Wallet</b></span>
+            </div>
+            <p class="sP">The Fastest Way to <br> Pay In-store & Online.</p>
+            <p class="load">Load up your Paytm Wallet for free and make payments <br> in a jiffy at over 21 million stores, websites and apps.</p>
+            <button class="btn">
+                Download Paytm App
+                <span
+                  ><svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                      fill="white"></path></svg></span>
+                <span
+                  ><svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                      fill="white"
+                    ></path></svg></span>
+              </button>
+
+        </div>      
+        
+        
+        <img class="boxR" src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="">
+         
+    </div>
+    <!-- box 2 -->
+    <div class="boxP">
+        <div class="boxL">
+            <div class="smallBox">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt=""> 
+            <span class="name"><b>UPI Money <br> Transfer</b></span>
+            </div>
+           
+            <p class="sP"> Pay anyone directly <br> from your bank <br> account.</p>
+         
+
+            <p class="load">   Pay anyone, everywhere. Make contactless & secure <br> payments in-stores or online using Paytm Wallet or <br> Directly from your Bank Account. Plus, send & receive <br> money from anyone.</p>
+            <button class="btn">
+                Download Paytm App
+                <span
+                  ><svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                      fill="white"></path></svg></span>
+                <span
+                  ><svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                      fill="white"
+                    ></path></svg></span>
+              </button>
+
+        </div>      
+        
+        
+        <img class="boxR" src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="">
+         
+    </div>
+
+    <!-- box 3 -->
+    <div class="boxP">
+        <div class="boxL">
+            <div class="smallBox">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="">
+           
+            </div>
+           
+            <p class="sP"> Want it? <br>
+                No more waiting for it.</p>
+
+            
+            <p class="load">With Paytm Postpaid, your wishlist doesn't have to be <br> on the waitlist. Shop for the things you want today and <br> pay for them next month.</p>
+            <button class="btn learn">
+               Learn More
+               <span class="arrow learn"><i class="fa-solid fa-greater-than"></i></span>
+              </button>
+
+        </div>      
+
+        <img class="boxR" src="https://assetscdn1.paytm.com/images/catalog/view_item/850764/1626077030984.png" alt="">
+         
+    </div>
+    
+    <div class="boxP">
+      <div class="boxL d1">
+        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="">
+
+      </div>
+      <div class="boxR d2">
+        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="">
+      </div>
+    </div>
+
+</div>
+
+  </body>
+</html>

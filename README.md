@@ -2,6 +2,8 @@
 
 Workshops arranged by Masai School &amp; Scalar Academy
 
-<img src="Workshop/Workshop-NetFlix/Screenshot-Netflix.png" />
-<img src="D:\Workshop\Workshop-PayTM\Screenshot-Paytm.png" />
-<img src="D:\Workshop\Workshop-Tinder\Screenshot-Tinder.png" />
+<div style="display:flex">
+<img style="width:75%;" src="Workshop-NetFlix/Screenshot-Netflix.png" />
+<img style="width:75%;" src="Workshop-PayTM/Screenshot-Paytm.png" />
+<img style="width:75%;" src="Workshop-Tinder/Screenshot-Tinder.png" />
+</div>

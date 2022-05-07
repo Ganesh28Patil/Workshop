@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dream 11 Clone</title>
+    <style>
+        *{
+            margin:0px;
+             padding:0px;
+        }
+
+        /* The code for the top Section  */
+        .top-section{
+            /* it takes the width of the parent */
+            width: 100%;
+            height: 400px;
+            background: url("https://cdnflags.dream11.com/d11-static-pages/images/homebg_2022_ipl_updated.webp");
+            margin-bottom: 20px;
+        }
+        .banner-section{
+            width: 80%;
+            /* border: 1px solid white; */
+            height:100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .banner{
+            width: 45%;
+            height: 100%;
+            /* border: 2px solid red; */
+        }
+        .banner-image{
+            height: 100%;
+        }
+        .ipl-image{
+            width: 70%;
+        }
+        .banner-title{
+            color: white;
+            margin-bottom: 20px;
+        }
+        input{
+            padding: 2%;
+            width: 50%;
+            border-radius: 5px;
+        }
+        button{
+            color: white;
+            background-color: green;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        /* The code for the bottom section  */
+        .main{
+            width: 80%;
+            margin: auto;
+            height: 400px;
+        }
+        .main-title{
+            text-align: center;
+        }
+        .secondary-title{
+            color: blue;
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(227,239,255);
+            width: 50%;
+            margin-left: 25%;
+        }
+        .main-text{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            width:90%;
+        }
+
+        /* Cards section  */
+        .card-parent{
+            display: flex;
+            width: 100%;
+            margin-top: 100px;
+            justify-content: space-between;
+
+
+        }
+        .card{
+            width: 25%;
+            background-color:#EEEEEE;
+            padding: 30px 30px;
+            border-radius: 7px;
+            position: relative;
+            height: 70px;
+        }
+        .card-img{
+            /* height:85px; */
+            width: 50%;
+            position: absolute;
+            top:-45%;
+            right: 20px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-left: 300px;
+        }
+        .card-number{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: green;
+            color: white;
+            padding: 2% 5%;
+            font-size: 23px;
+            box-sizing: border-box;
+            margin-top: -50px;
+            margin-left: -15px;
+            float: left;
+            border: 3px solid white;
+        }
+        .logo{
+            height: 50%;
+            margin-left: -13%
+        }
+
+    </style>
+</head> 
+<body>
+    <!-- For the black image background  -->
+    <div class="top-section">
+        <!-- For the banner portion  -->
+      <div class="banner-section">
+          <img class="logo" src="https://cdnflags.dream11.com/d11-static-pages/images/Logo-Bolt.webp" alt="logo">
+          <div class="banner right">
+              <!-- Plater image  -->
+              <img class="banner-image" src="https://cdnflags.dream11.com/d11-static-pages/images/players_2022_ipl_updated.webp" alt="">
+          </div>
+          <div class="banner left">
+              <!-- Heading and input and button  -->
+                <!-- The ipl image  -->
+              <img class="ipl-image" src="https://cdnflags.dream11.com/d11-static-pages/images/tata_ipl_d11_logo_unit.webp" alt="">
+              <h2 class="banner-title">Download the official Dream11 app
+            </h2>
+            <input placeholder="Enter your Mobile Number" type="text">
+            <button>GET APP LINK</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="main">
+     <h2 class="main-title">It's easy to start playing <span style="color: red"> Fantasy Cricket on Dream11 </span>
+    </h2>
+    <p class="secondary-title">Play Fantasy cricket on Dream11 and win big!</p>
+    <p class="main-text">Enter into the thrilling world of Fantasy sports, a strategy-based online sports game wherein you can create a virtual team of real players playing in real life matches. Choose your team smartly to win good points based on the player's performance in a live game. Dream11 is one of the leading fantasy cricket sites for Indian sports fans.</p>
+
+    <div class="card-parent">
+        <div class="card">
+            <div class="card-number">1</div>
+            <h2>Select A Match</h2>
+            <p>Choose an upcoming match that you want to play</p>
+            <img class="card-img" src="https://cdnflags.dream11.com/d11-static-pages/images/winning_step_1-22.webp" alt="">
+
+        </div>
+        <div class="card">
+            <div class="card-number">2</div>
+            <h2>Create a Team </h2>
+            <p>Use your skills to pick the right players</p>
+            <img class="card-img" src="https://cdnflags.dream11.com/d11-static-pages/images/winning_step_new2.webp" alt="">
+
+        </div>
+        <div class="card">
+            <div class="card-number">3</div>
+            <h2>Join Contests</h2>
+            <p>Choose between different contests and win money</p>
+            <img class="card-img" src="https://cdnflags.dream11.com/d11-static-pages/images/winning_step_new4.webp" alt="">
+          
+        </div>
+    </div>
+    </div>
+</body>
+</html>

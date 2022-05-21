@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Style for navbar-1    */
+      #navbar-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+      }
+
+      .logo {
+        height: 40px;
+        width: 40px;
+      }
+
+      .margin {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      #links a {
+        text-decoration: none;
+        color: rgb(40, 40, 40);
+      }
+
+      /* Style for Navbar-2  */
+
+      #navbar-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .logo-2 {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+      }
+
+      #navbar-2-logo,
+      #navbar-2-links,
+      #search-links {
+        width: 33%;
+      }
+
+      #navbar-2-links a {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: larger;
+      }
+
+      #search-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      #search {
+        height: 30px;
+        border-radius: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 15px;
+      }
+
+      /* Navbar-3  */
+      #navbar-3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        padding: 10px;
+      }
+
+      #navbar-3 h4,
+      #navbar-3 h6 {
+        margin: 0;
+      }
+
+      /* Image Cards  */
+
+      #image-cards {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #image-cards img {
+        width: 31%;
+        border-radius: 15px;
+        border: 1px solid gray;
+      }
+
+      /* Additional text  */
+
+      #additional-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      .small-text,
+      .big-text {
+        margin: 0;
+        padding: 5px;
+      }
+
+      .big-text {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      #additional-text button {
+        border-radius: 20px;
+        margin-top: 15px;
+        padding: 10px 20px 10px 20px;
+        font-size: 15px;
+        background-color: rgb(28, 28, 28);
+        color: white;
+      }
+      .shoe{
+        width:98%;
+        margin:5px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .box{
+        width: 40%;
+        align-items: center;
+      }
+      .ngf{
+        display:flex;
+        justify-content: space-between;
+        height: 100px;
+        font-size: larger;
+        padding: 25px;
+      }
+      .btn{
+        border-radius: 50%;
+        background-color: rgb(245,245,245);
+        height: 40px;
+        width: 40px;
+        font-size: large;
+      }
+      .dark{
+        background-color: rgb(229,229,229);
+      }
+      .boxShow{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        /* border: 3px solid yellow; */
+        margin-top: -50px;
+      }
+      .img3{
+        width: 100%;
+        /* padding: 10px; */
+      }
+      .frame{
+        padding: 25px;
+        height: 60%;
+        width: 35%;
+        /* border: 1px solid blue; */
+        margin: 5px;
+
+      }
+      .frame > span{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .footer > img {
+        width: 1250px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Nike</title>
+  </head>
+  <body>
+    <!-- Navabar - 1  -->
+    <div id="navbar-1" class="margin">
+      <img
+        src="https://lh6.googleusercontent.com/p2rp-BZO3XQzZ_wIQP7XcF9CxC5i_pvgqbp4YuTk3lI8GSYHo5VwHAsDnkJrASJmnhqnZsL8TLo2GdXcTp30U70CStONyVy18LTkDJzcPR2OxdpwZW3vxVC6ZhyARkgRnRQW6dk=s0"
+        class="logo"
+      />
+      <div id="links">
+        <a href="">Help |</a>
+        <a href="">Join Us |</a>
+        <a href="">Sign In</a>
+      </div>
+    </div>
+
+    <!-- Navbar-2  -->
+
+    <div id="navbar-2" class="margin">
+      <div id="navbar-2-logo">
+        <img
+          src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo-1978-present.jpg"
+          class="logo"
+        />
+      </div>
+      <div id="navbar-2-links">
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">Kids</a>
+        <a href="">Sale</a>
+        <a href="">SNKRS</a>
+      </div>
+      <div id="search-links">
+        <input type="text" id="search" placeholder="Search" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
+          class="logo-2"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1656/1656850.png"
+          class="logo-2"
+        />
+      </div>
+    </div>
+
+    <!-- Navbar-3  -->
+
+    <div id="navbar-3" class="margin">
+      <h4>Free Delivery</h4>
+      <h6>Shop All our new Markdowns</h6>
+    </div>
+
+    <!-- Image Cards  -->
+    <div id="image-cards" class="margin">
+      <img
+        src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_700,c_limit/6c109115-5da2-4801-9321-dd9483790657/men-s-shoes-clothing-accessories.png"
+      />
+      <img
+        src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_700,c_limit/d61353d0-0b3e-4bff-b980-53909a13eff7/men-s-shoes-clothing-accessories.png"
+      />
+      <img
+        src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_700,c_limit/d87e3748-c703-4369-a201-75c4c31656e3/men-s-shoes-clothing-accessories.png"
+      />
+    </div>
+
+    <!-- Additional text  -->
+
+    <div id="additional-text">
+      <p class="small-text">The ACG guide to</p>
+      <h1 class="big-text">FIND YOUR OUTDOOR ADVENTURE</h1>
+      <p class="small-text">
+        The first 50 years were just the beginning. Watch our 50th anniversary
+        film, directed by and starring Spike Lee and Indigo Hubbard-Salk.
+      </p>
+      <button>Shop</button>
+    </div>
+    <!-- YOU - Part -->
+
+    <div>
+      <h1>Just In</h1>
+      <img class="shoe" src="img1.png"
+    </div>
+    <div id="additional-text">
+      <h1 class="big-text">JORDAN WHY NOT .5</h1>
+      <p class="small-text">
+        A large Volume Zoom air unit in the forefoot to help return your energy on court.
+      </p>
+      <button>Shop</button>
+    </div>
+    <div class="ngf">
+      <p>Nike Golf Collection</p>
+      <span>
+        <button class="btn"><</button>
+        <button class="btn dark">></button>
+      </span>
+    </div>
+    <div class="boxShow">
+      <div class="frame">
+      <img class="img3" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.2/w_487,c_limit/232f29a8-2b2b-48fa-a0f6-89dd52f19c16/air-zoom-infinity-tour-next-golf-shoes-Gqt3ZQ.png" />
+      <span>
+        <p>Nike Air Zoom Infinity Tour NEXT% <br />
+          Men's Golf Shoe (Wide)</p> 
+          <p>14,995</p>
+      </span>
+    </div>
+    <div class="frame">
+      <img class="img3" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.2/w_487,c_limit/178f018f-bfa5-439c-bed5-e0bbd7750a5d/air-zoom-infinity-tour-nxt-golf-shoes-M0cZ11.png" />
+      <span>
+        <p>Nike Air Zoom Infinity Tour NEXT% <br />
+          Men's Golf Shoe (Wide)</p> 
+          <p>14,995</p>
+      </span>
+    </div>
+    <div class="frame">
+      <img class="img3" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.2/w_487,c_limit/804cc26e-36f4-40ca-9649-98965708951e/heritage86-washed-golf-hat-ZRvzwr.png" />
+      <span>
+        <p>Nike Air Zoom Infinity Tour NEXT% <br />
+          Men's Golf Shoe (Wide)</p> 
+          <p>14,995</p>
+      </span>
+    </div>
+    </div>
+    <div class="footer">
+      <img src="footer.png" alt="footer" />
+    </div>
+  </body>
+</html>

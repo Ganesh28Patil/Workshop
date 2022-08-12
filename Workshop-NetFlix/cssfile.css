@@ -1,5 +1,6 @@
 .background{
-    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/fdd1a263-01c3-4d03-9319-25351d2402c2/IN-en-20220117-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/fdd1a263-01c3-4d03-9319-25351d2402c2/IN-en-20220117-popsignuptwoweeks-perspective_alpha_website_large.jpg"); */
+    background-image: url("bgNetflix.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120% 120%;
@@ -52,7 +53,7 @@
 .signinbutton{
     background-color: red;
     color: white;
-    height: 40px;
+    height: 39px;
     width: 90px;
     font-size: 15;
     position: absolute;
@@ -62,6 +63,12 @@
     transform: translate(-50%, -50%);
     padding: 10px; 
 }
+input[type=button]:hover{
+    cursor: pointer;
+}
+/* .signinbutton:hover{
+    cursor: pointer;
+} */
 .dropdown{
     color: white;
     height: 34px;

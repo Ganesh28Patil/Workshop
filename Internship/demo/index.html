@@ -97,6 +97,36 @@
         .patientIntro>div>p:first-child {
             color: blue;
         }
+
+        figure>img {
+            clip-path: circle(35%);
+            height: 100px;
+        }
+
+
+
+        .patientProfileCard {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            width: 250px;
+            align-items: center;
+            justify-content: space-around;
+            height: 350px;
+        }
+
+        .record {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid red;
+            width: 60%;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .record>div>h1 {
+            margin-bottom: -1px;
+        }
     </style>
 </head>
 
@@ -129,11 +159,26 @@
                 <i class="fa-solid fa-pen-to-square"></i>Edit Patient
             </button>
         </div>
-
-
     </section>
     <main>
         <p>This is a simple HTML5 Template</p>
+        <section class="patientProfileCard">
+            <figure>
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-girl-in-yellow-tshirt-reading-a-book-at-home-picture-id1264470593?k=20&m=1264470593&s=612x612&w=0&h=n_O5weXkiq1YT8-2Nx0-KjhyLqEiaBacVY8OZ8np-ec="
+                    alt="profileImage">
+            </figure>
+            <h1>Daine Cooper</h1>
+            <figcaption>daina_cooper@gmail.com</figcaption>
+            <div class="record">
+                <div>
+                    <h1>15</h1><span>Past</span>
+                </div>
+                <div>
+                    <h1>2</h1><span>Upcoming</span>
+                </div>
+            </div>
+            <button>Send Message</button>
+        </section>
     </main>
 
 

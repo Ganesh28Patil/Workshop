@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/8738d4fceb.js" crossorigin="anonymous"></script>
 
     <style>
-        * {
+        body {
             background-color: rgb(242, 245, 249);
         }
 
@@ -103,22 +103,35 @@
             height: 100px;
         }
 
-
+        .profileData {
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            width: 100%;
+            align-items: center;
+            height: 100%;
+            /* padding: ; */
+        }
 
         .patientProfileCard {
             display: flex;
             flex-direction: column;
-            border: 1px solid red;
-            width: 250px;
+            /* border: 1px solid red; */
+            /* width: 250px; */
             align-items: center;
             justify-content: space-around;
             height: 350px;
+            border-radius: 10px;
+            background-color: rgb(255, 253, 253);
+            padding: 10px;
+            width: 35%;
+            text-align: center;
         }
 
         .record {
             display: flex;
             justify-content: space-between;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 60%;
             text-align: center;
             padding: 5px;
@@ -126,6 +139,279 @@
 
         .record>div>h1 {
             margin-bottom: -1px;
+        }
+
+        .record>hr {
+            height: 60px;
+        }
+
+
+        .patientProfileCard>button {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        .recordDetail {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: rgb(255, 253, 253);
+            padding: 10px;
+            /* width: 500px; */
+            width: 55%;
+        }
+
+        .frame {
+            display: flex;
+            justify-content: space-around;
+            /* border: 2px solid yellow; */
+            margin: 16px;
+        }
+
+        .box {
+            border-bottom: 1px solid gray;
+            text-align: center;
+            /* border: 2px solid blue; */
+            width: 30%;
+            margin: auto;
+        }
+
+        #skip {
+            border: 0px;
+        }
+
+        .appointmentDetails {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(255, 253, 253);
+            margin: 10px;
+            /* border: 2px solid red; */
+            border-radius: 5px;
+        }
+
+        .appStatus {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(239, 241, 247);
+            border-radius: 5px;
+            padding-right: 10px;
+        }
+
+        .activeApp {
+            color: blue;
+            background-color: white;
+            border-radius: 10px;
+            margin: 3px;
+            padding: 10px;
+            /* padding-left: 15px; */
+            width: 35%;
+            text-align: center;
+        }
+
+        .treatment {
+            margin-top: 10px;
+            background-color: rgb(239, 241, 247);
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+        }
+
+        .treatmentBox {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid rgb(215, 208, 208);
+        }
+
+        .white {
+            color: gray
+        }
+
+        .gray {
+            background-color: rgb(239, 241, 247);
+            color: black;
+        }
+
+        .dashBoardFrame {
+            display: flex;
+            /* border: 2px solid greenyellow; */
+            padding: 10px;
+            background-color: white;
+            /* background-color: rgb(239, 241, 247); */
+            border: 1px solid rgb(226, 216, 216);
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .dashBoard {
+            padding: 10px;
+        }
+
+        .box {
+            /* border: 2px solid red; */
+            margin: 10px;
+        }
+
+        .unBorder {
+            border-bottom: 0px;
+        }
+
+        .blueColor {
+            color: blue;
+            /* border: 5px solid red; */
+            /* height: 20px; */
+            /* margin-top: 20px; */
+            /* padding-top: 20px; */
+            margin-top: 2px;
+            /* padding-top: -20px; */
+            display: flex;
+            align-items: center;
+        }
+
+        .note {
+            height: 20px;
+            margin: 5px;
+            /* border: 3px solidred; */
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .head>p {
+            color: blue;
+        }
+
+        .noteDown {
+            /* border: 2px solid green; */
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        #saveNote {
+            color: white;
+            border-radius: 5px;
+            background-color: blue;
+            border: 1px solid blue;
+            margin-right: 0px;
+            margin-left: 78%;
+            margin-bottom: 10px;
+        }
+
+        .grayBox {
+            /* border: 1px solid red; */
+            width: 95%;
+            margin-left: 2%;
+            border-radius: 5px;
+            background-color: rgb(239, 241, 247);
+            padding: 5px;
+        }
+
+
+        .docData {
+            display: flex;
+            /* border: 1px solid red; */
+            padding: 4px;
+        }
+
+        .docData>span {
+            margin-top: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .docData>img {
+            height: 25px;
+        }
+
+        .docDetail {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .head>div {
+            display: flex;
+            height: 15px;
+            align-items: center;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            width: 110px;
+            justify-content: space-around;
+        }
+
+        .head>div>img {
+            height: 25px;
+        }
+
+        .uploadBox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .uploadBox>div {
+            display: flex;
+            /* border: 2px solid green; */
+        }
+
+        .uploadBox>div>img {
+            height: 20px;
+            margin: 5px;
+        }
+
+        .uploadBox>div>span {
+            margin-top: 5px;
+        }
+
+        .uploadBox>div>i {
+            color: gray;
+            margin: 2px;
+        }
+
+        .uploads>.uploadBox {
+            border-top: 0.01px solid rgb(255, 245, 245);
+            border-bottom: 1px solid rgb(199, 193, 193);
+            border-left: 1px solid rgb(199, 193, 193);
+            border-right: 1px solid rgb(199, 193, 193);
+            margin: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        main {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* main>div {
+            border: 2px solid blue;
+        } */
+
+        #box1 {
+            width: 65%;
+            /* border: 3px solid yellow; */
+            height: 450px;
+        }
+
+        #box2 {
+            width: 28%;
+            /* border: 3px solid yellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 900px;
+        }
+
+        /* #box2>article {
+            border: 1px solid red;
+        } */
+        .grayColor {
+            color: rgb(194, 193, 193);
         }
     </style>
 </head>
@@ -161,24 +447,206 @@
         </div>
     </section>
     <main>
-        <p>This is a simple HTML5 Template</p>
-        <section class="patientProfileCard">
-            <figure>
-                <img src="https://media.istockphoto.com/photos/portrait-of-a-girl-in-yellow-tshirt-reading-a-book-at-home-picture-id1264470593?k=20&m=1264470593&s=612x612&w=0&h=n_O5weXkiq1YT8-2Nx0-KjhyLqEiaBacVY8OZ8np-ec="
-                    alt="profileImage">
-            </figure>
-            <h1>Daine Cooper</h1>
-            <figcaption>daina_cooper@gmail.com</figcaption>
-            <div class="record">
-                <div>
-                    <h1>15</h1><span>Past</span>
+        <div id="box1">
+            <article class="profileData">
+                <section class="patientProfileCard">
+                    <figure>
+                        <img src="https://media.istockphoto.com/photos/portrait-of-a-girl-in-yellow-tshirt-reading-a-book-at-home-picture-id1264470593?k=20&m=1264470593&s=612x612&w=0&h=n_O5weXkiq1YT8-2Nx0-KjhyLqEiaBacVY8OZ8np-ec="
+                            alt="profileImage">
+                        <h1>Daine Cooper</h1>
+                        <figcaption class="grayColor">daina_cooper@gmail.com</figcaption>
+                    </figure>
+                    <div class="record">
+                        <div>
+                            <h1>15</h1><span>Past</span>
+                        </div>
+                        <hr />
+                        <div>
+                            <h1>2</h1><span>Upcoming</span>
+                        </div>
+                    </div>
+                    <button>Send Message</button>
+                </section>
+                <section class="recordDetail">
+                    <div class="frame">
+                        <div class="box">
+                            <p class="grayColor">Gender</p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box">
+                            <p class="grayColor">Birthday</p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box">
+                            <p class="grayColor">Phone Number</p>
+                            <p>Female</p>
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="box">
+                            <p class="grayColor">Street Address </p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box">
+                            <p class="grayColor">City </p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box">
+                            <p class="grayColor">Gender</p>
+                            <p>Female</p>
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="box">
+                            <p class="grayColor">ZIP Code</p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box">
+                            <p class="grayColor">Member Status</p>
+                            <p>Female</p>
+                        </div>
+                        <div class="box" id="skip">
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="appointmentDetails">
+                <div class="appStatus">
+                    <p class="activeApp">Upcoming Appointment</p>
+                    <p>Post Appointment</p>
+                    <p>Medical Records</p>
                 </div>
-                <div>
-                    <h1>2</h1><span>Upcoming</span>
+                <div class="treatment">
+                    <div class="treatmentBox">
+                        <span class="activeApp gray">
+                            Root Canal Treatement
+                        </span>
+                        <span class="activeApp white">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <span>Show Previous Treatment</span>
+                        </span>
+                    </div>
+                    <div class="dashBoard">
+                        <div class="dashBoardFrame">
+                            <div class="box unBorder">
+                                <h2>26 Nov'19</h2>
+                                <p class="grayColor">09:00 - 10:00</p>
+                            </div>
+                            <hr />
+                            <div class="box unBorder">
+                                <p class="grayColor">Treatement</p>
+                                <h4>Open Access</h4>
+                            </div>
+                            <hr />
+                            <div class="box unBorder">
+                                <p class="grayColor">Dentist</p>
+                                <h4>Drg.Adam H.</h4>
+                            </div>
+                            <div class="box unBorder">
+                                <p class="grayColor"> Nurse </p>
+                                <h4>Jessicamila</h4>
+                            </div>
+                            <div class="box unBorder blueColor">
+                                <img class="note" src="note.png" alt="notePad"><span>Note</span>
+                            </div>
+                        </div>
+                        <div class="dashBoardFrame">
+                            <div class="box unBorder">
+                                <h2>12 Dec'19</h2>
+                                <p class="grayColor">09:00 - 10:00</p>
+                            </div>
+                            <hr />
+                            <div class="box unBorder">
+                                <p class="grayColor">Treatement</p>
+                                <h4>Root Canal prep</h4>
+                            </div>
+                            <hr />
+                            <div class="box unBorder">
+                                <p class="grayColor">Dentist</p>
+                                <h4>Drg.Adam H.</h4>
+                            </div>
+                            <div class="box unBorder">
+                                <p class="grayColor"> Nurse </p>
+                                <h4>Jessicamila</h4>
+                            </div>
+                            <div class="box unBorder blueColor">
+                                <img class="note" src="note.png" alt="notePad"> <span>Note</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <button>Send Message</button>
-        </section>
+            </article>
+        </div>
+        <div id="box2">
+            <article class="noteDown">
+                <div class="head">
+                    <h3>Notes</h3>
+                    <p>See all</p>
+                </div>
+                <div class="grayBox">
+                    <p>- This patien is Lorem ipsum dolor sit amet.</p>
+                    <p>- Lorem ipsum dolor sit amet.</p>
+                    <p>- has alergic history with cataflam</p>
+                    <button id="saveNote">save note</button>
+                </div>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <div class="docDetail">
+                    <div class="docData">
+                        <img src="iconPerson.png" alt="doctor">
+                        <span class="grayColor">Dr. Mega Nandane</span>
+                    </div>
+                    <span class="grayColor">20 Nov'19</span>
+                </div>
+            </article>
+            <article class="noteDown">
+                <div class="head">
+                    <h3>Files / Documents</h3>
+                    <div>
+                        <img src="addFile.png" alt="Add File">
+                        <p>Add Files</p>
+                    </div>
+
+                </div>
+                <div class="uploads">
+                    <div class="uploadBox">
+                        <div>
+                            <img src="uploadNote.png" alt="upload note">
+                            <span>Check Up Result.pdf </span>
+                        </div>
+                        <span>123 kb</span>
+                    </div>
+                    <div class="uploadBox">
+                        <div>
+                            <img src="uploadNote.png" alt="upload note">
+                            <span>Check Up Result.pdf </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-trash-can"></i>
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="uploadBox">
+                        <div>
+                            <img src="uploadNote.png" alt="upload note">
+                            <span>Medical Prescriptions.pdf </span>
+                        </div>
+                        <span>87 kb</span>
+                    </div>
+                    <div class="uploadBox">
+                        <div>
+                            <img src="uploadNote.png" alt="upload note">
+                            <span>Check Up Result.pdf </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-trash-can"></i>
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
     </main>
 
 

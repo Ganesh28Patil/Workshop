@@ -5,8 +5,7 @@ import {
   Input,
   Button,
   List,
-  ListItem,
-  Avatar
+  ListItem
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -14,7 +13,8 @@ const Form1 = () => {
   return (
     <Box p="20px" bg="#fff">
       <Box display="flex" justifyContent="center" textAlign="center" mb="30px">
-      <Avatar src='../../Eden.png' />
+      {/* <Avatar src='../../Eden.png' /> */}
+      <img style={{height: "40px",marginRight:"5px"}} src="Eden.png"  />
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Box>

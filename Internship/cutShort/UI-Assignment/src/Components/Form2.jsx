@@ -7,8 +7,7 @@ import {
   List,
   ListItem,
   InputLeftAddon,
-  InputGroup,
-  Avatar,
+  InputGroup, 
   Flex
 } from "@chakra-ui/react";
 import React from "react";
@@ -17,7 +16,9 @@ const Form2 = () => {
   return (
     <Box p="20px" bg="#fff" minW="620px">
       <Flex justifyContent="center" textAlign="center" mb="40px">
-      <Avatar  src='../../Eden.png' />
+      {/* <Avatar  src='../../Eden.png' /> */}
+      <img style={{height: "40px",marginRight:"5px"}} src="Eden.png"  />
+
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Flex>

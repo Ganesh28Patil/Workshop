@@ -14,7 +14,7 @@ const Form1 = () => {
   return (
     <Box p="20px" bg="#fff">
       <Box display="flex" justifyContent="center" textAlign="center" mb="30px">
-      <Avatar name='Dan Abrahmov' src='../../Eden.png' />
+      <Avatar src='../../Eden.png' />
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Box>

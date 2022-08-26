@@ -20,7 +20,7 @@ const Form4 = () => {
     <Box p="5vh" bg="#fff" minW="620px" height="fit-content">
 
       <Flex justifyContent="center" textAlign="center" mb="50px">
-      <Avatar name='Dan Abrahmov' src='../../Eden.png' />
+      <Avatar  src='../../Eden.png' />
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Flex>

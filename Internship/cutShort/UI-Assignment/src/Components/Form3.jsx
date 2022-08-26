@@ -20,7 +20,7 @@ const Form3 = () => {
   return (
     <Box p="20px" bg="#fff" minW="620px">
       <Flex justifyContent="center" textAlign="center"  mb="50px">
-      <Avatar name='Dan Abrahmov' src='../../Eden.png' />
+      <Avatar  src='../../Eden.png' />
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Flex>

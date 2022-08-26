@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+        nav,
+        nav>div {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            /* border: 2px solid red; */
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 20px;
+            color: white;
+            /* font-weight: bold; */
+        }
+
+
+        nav>div:nth-child(2) {
+            /* border: 2px solid yellow; */
+            padding: 3px;
+            width: 50%;
+
+        }
+
+        #appIcon {
+            /* border: 2px solid yellow; */
+            height: 35px;
+            margin-top: 15px;
+            margin-right: 5px;
+        }
+
+        header {
+            background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+            height: 462px;
+            width: 1413px;
+        }
+
+        #tgName {
+            width: 340px;
+            /* margin: 10%; */
+        }
+
+        .inpBox {
+            border: 2px solid white;
+            height: 60px;
+            width: 800px;
+            border-radius: 10px;
+            background-color: white;
+            color: gray;
+            margin: auto;
+        }
+
+        header>div {
+            /* border: 3px solid blue; */
+            margin-top: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 250px;
+            justify-content: space-around;
+        }
+
+        header>div>div>p {
+            color: white;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        .orderChoice {
+            display: flex;
+            justify-content: space-between;
+            border: 5px solid darkmagenta;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .frame>img {
+            /* width: fit-content; */
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            box-sizing: border-box;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .frame {
+            border: 1px solid black;
+            width: 48%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .frame>h3 {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/hand-holding-phone-1589469-1345474.png"
+                    alt="Get the App" id="appIcon">
+                <p>Get the App</p>
+            </div>
+            <div>
+                <p>Investor Relations</p>
+                <p>Add Restaurant</p>
+                <p>Log in</p>
+                <p>Sign up</p>
+            </div>
+        </nav>
+        <div>
+            <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+                alt="Zomato tagName" id="tgName">
+            <div>
+                <p>Discover the best food & drinks in Aurangabad</p>
+                <div class="inpBox"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="orderChoice">
+            <div class="frame">
+                <!-- <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt=""> -->
+                <img src="https://chorus.stimg.co/23352897/2supper040322.jpg?fit=crop&crop=faces" alt="">
+                <h1>Order Online</h1>
+                <h3>Stay home and order to your doorstep</h3>
+            </div>
+            <div class="frame">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="">
+                <h1>Order Online</h1>
+                <h3>Stay home and order to your doorstep</h3>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<script> </script>
+
+</html>

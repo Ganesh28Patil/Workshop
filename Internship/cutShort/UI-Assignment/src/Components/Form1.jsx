@@ -14,7 +14,7 @@ const Form1 = () => {
     <Box p="20px" bg="#fff">
       <Box display="flex" justifyContent="center" textAlign="center" mb="30px">
       {/* <Avatar src='../../Eden.png' /> */}
-      <img style={{height: "40px",marginRight:"5px"}} src="Eden.png"  />
+      <img style={{height: "40px",marginRight:"5px"}} src="../../Eden.png"   />
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
       </Box>

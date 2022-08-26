@@ -20,7 +20,7 @@ const Form4 = () => {
 
       <Flex justifyContent="center" textAlign="center" mb="50px">
       {/* <Avatar  src='../../Eden.png' /> */}
-      <img style={{height: "40px",marginRight:"5px"}} src="Eden.png"  />
+      <img style={{height: "40px",marginRight:"5px"}} src="../../Eden.png"  />
 
         {/* Logo */}
         <Heading fontSize="33px">Eden</Heading>
